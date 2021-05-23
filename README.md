@@ -1,3 +1,3 @@
-MYMONZOAUTH=$MYMONZOAUTH node getBalance.js
+MYMONZOAUTH=$MYMONZOAUTH MYMONZOACCOUNT=$MYMONZOACCOUNT node getBalance.js
 
 https://docs.monzo.com/
