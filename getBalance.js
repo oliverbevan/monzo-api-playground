@@ -1,10 +1,10 @@
 var myMONZOauth = process.env.MYMONZOAUTH;
-var myMONZOaccount = process.env.MYMONZOACCOUNT;
+var myMONZOaccountID = process.env.MYMONZOACCOUNTID;
 const https = require('https')
 const options = {
   hostname: 'api.monzo.com',
   // port: 443,
-  path: `/balance?account_id=${myMONZOaccount}`,
+  path: `/balance?account_id=${myMONZOaccountID}`,
   method: 'GET',
   headers: {
     'authorization': `Bearer ${myMONZOauth}`
