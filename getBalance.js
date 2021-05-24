@@ -18,7 +18,7 @@ const req = https.request(options, res => {
     obj = JSON.parse(d)
     balance = obj.balance/100
     process.stdout.write("Balance=£"+balance.toString())
-    if (balance<1000) {
+    if (balance<10) {
         process.stdout.write("\nLess than £10 in you Monzo account!")
     }
   })
